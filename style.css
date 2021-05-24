@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color:#DCDCDC;
 }
 
 li, a, button, h4 { 
@@ -20,6 +19,85 @@ header {
     align-items: center;
     padding: 7px 10%;
     background-color: #585858;
+    width: 100%;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: edf0f1;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 250px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+ /*css Manual*/
+ .navigation-manual{
+     position: absolute;
+     width: 800px;
+     margin-top: -40px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .manual-btn{
+     border: 3px solid #2E8B57;
+     padding: 5px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 1s;
+ }
+
+ .manual-btn:not(:last-child){
+     margin-right: 40px;
+ }
+
+ .manual-btn:hover{
+     background: #40D3DC;
+ }
+
+ #radio1:checked ~ .first{
+     margin-left: 0px;
+ }
+
+ #radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
 }
 
 .erste {
@@ -51,9 +129,9 @@ button {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border:none;
-    border-radius:50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    border-radius: 15px;
 }
 
 button:hover{
@@ -84,3 +162,4 @@ button:hover{
     margin-right: 800px;
     margin-left:50px;
 }
+
