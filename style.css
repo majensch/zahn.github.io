@@ -164,6 +164,8 @@ button:hover{
     margin-left:50px;
 }
 
+/*Contact Page CSS*/
+
 .contact{
     position: relative;
     min-height: 100vh;
@@ -297,4 +299,56 @@ button:hover{
     cursor:pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+/*Team CSS*/
+.container{
+    margin:20px 40px;
+    color: black;
+}
+
+.heading{
+    font-size: 60px;
+    color: black;
+    margin-left: 510px;
+    margin-top: 50px;
+}
+
+.profiles{
+    display:flex;
+    justify-content: space-around;
+    margin:20px 80px;
+}
+
+.profile{
+    flex-basis: 260px;
+}
+
+.profile .profile-img{
+    filter: grayscale(100%);
+    border-radius:50px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img{
+    filter:grayscale(0);
+}
+
+.user-name{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.profile h5{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: red;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
 }
