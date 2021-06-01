@@ -33,12 +33,31 @@ main {
     background: edf0f1;
 }
 
+/*Heading*/
+.heading{
+    display:flex;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    margin-top: 15px;
+}
+
+.heading h1{
+    font-size: 19px;
+}
+
+.heading h2{
+    font-size: 18px;
+}
+
+/*Slider*/
+
 .slider{
     width: 800px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 250px;
+    margin-left:30%;
 }
 
 .slides{
@@ -307,10 +326,10 @@ button:hover{
     color: black;
 }
 
-.heading{
+.heading_t{
     font-size: 60px;
     color: black;
-    margin-left: 510px;
+    margin-left: 750px;
     margin-top: 50px;
 }
 
